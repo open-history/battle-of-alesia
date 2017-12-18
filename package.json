@@ -19,8 +19,8 @@
 		"clean": "rimraf dist && mkdirp dist",
 		"build": "npm run clean -s && run-p build-scripts build-styles && echo ✔ done production build",
 		"build-debug": "npm run clean -s && run-p build-scripts-debug build-styles && echo ✔ done debug build",
-		"build-scripts": "browserify source/main.tsx -p [ tsify ] -g [ envify --NODE_ENV production ] -g uglifyify > dist/main.bundle.uncompressed.js && uglifyjs -cm < dist/main.bundle.uncompressed.js > dist/main.bundle.js",
-		"build-scripts-debug": "browserify source/main.tsx --debug -p [ tsify ] > dist/main.bundle.js",
+		"build-scripts": "browserify source/main.ts -p [ tsify ] -g [ envify --NODE_ENV production ] -g uglifyify > dist/main.bundle.uncompressed.js && uglifyjs -cm < dist/main.bundle.uncompressed.js > dist/main.bundle.js",
+		"build-scripts-debug": "browserify source/main.ts --debug -p [ tsify ] > dist/main.bundle.js",
 		"build-styles": "node-sass --source-map true source/style.scss dist/style.css",
 		"watch-styles": "npm run build-styles -s -- --watch",
 		"test": "jest --coverage --verbose",
@@ -55,6 +55,7 @@
 		"uglifyify": "4.0.5"
 	},
 	"dependencies": {
+		"chillax": "0.0.0-dev.4",
 		"mobx": "3.4.1",
 		"mobx-preact": "1.1.0",
 		"preact": "8.2.7",
