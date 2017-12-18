@@ -1,15 +1,7 @@
 {
-	"name": "glorious-frontend",
-	"version": "0.4.0-dev",
-	"description": "a stack to stake your career on",
-	"keywords": [
-		"frontend",
-		"template",
-		"typescript",
-		"preact",
-		"mobx",
-		"jest"
-	],
+	"name": "battle-of-alesia",
+	"version": "0.0.0-dev.1",
+	"description": "julius caesar's story of the siege of vercingetorix's men and the people of the gallic hill fort alesia",
 	"private": true,
 	"main": "dist/main.bundle.js",
 	"author": "Chase Moskal <chasemoskal@gmail.com>",
