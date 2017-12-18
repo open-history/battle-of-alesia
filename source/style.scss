@@ -1,0 +1,75 @@
+
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+$textcolor: #888;
+
+html {
+	font-size: 16px;
+	font-family: "Alegreya SC", serif;
+	background: #222;
+	color: #888;
+	text-align: center;
+}
+
+a:link { color: lighten($textcolor, 10%); text-decoration: none; }
+a:visited { color: lighten($textcolor, 10%); }
+a:hover { color: lighten($textcolor, 20%); text-decoration: underline; }
+a:active { color: lighten($textcolor, 30%); }
+
+h1 {
+	letter-spacing: 0.1em;
+}
+
+h2 {
+	font-weight: lighter;
+}
+
+em {
+	font-style: normal;
+	color: lighten($textcolor, 15%);
+}
+
+body > header {
+	h1 {
+		margin: 2em;
+
+		span {
+			display: block;
+
+			&:nth-child(1) {
+				font-size: 1.5em;
+				color: lighten($textcolor, 40%);
+			}
+
+			&:nth-child(2) {
+				font-size: 1em;
+				color: lighten($textcolor, 20%);
+			}
+		}
+	}
+}
+
+body > section {
+	margin: auto;
+	margin-top: 4em;
+	padding: 1em;
+
+	h1 {
+		font-size: 1.6em;
+		margin: auto;
+		margin-top: 0.5em;
+		max-width: 1000px;
+		color: lighten($textcolor, 20%)
+	}
+	
+	h2 {
+		margin: auto;
+		margin-top: 0.5em;
+		max-width: 750px;
+	}
+}
