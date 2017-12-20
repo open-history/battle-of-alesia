@@ -51,6 +51,7 @@
 		"mobx": "3.4.1",
 		"mobx-preact": "1.1.0",
 		"preact": "8.2.7",
-		"tsify": "3.0.4"
+		"tsify": "3.0.4",
+		"webp-hero": "0.0.0-dev.11"
 	}
 }
