@@ -3,12 +3,10 @@
 		"baseUrl": ".",
 		"rootDir": "source",
 		"outDir": "dist",
-		"target": "es6",
+		"target": "es5",
 		"lib": ["es6", "dom"],
 		"module": "commonjs",
 		"moduleResolution": "node",
-		"jsx": "react",
-		"jsxFactory": "h",
 		"experimentalDecorators": true,
 		"sourceMap": true
 	}
