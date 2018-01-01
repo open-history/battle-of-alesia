@@ -47,7 +47,7 @@
 		"uglifyify": "4.0.5"
 	},
 	"dependencies": {
-		"chillax": "0.0.0-dev.4",
+		"chillax": "0.0.0-dev.6",
 		"mobx": "3.4.1",
 		"mobx-preact": "1.1.0",
 		"preact": "8.2.7",
