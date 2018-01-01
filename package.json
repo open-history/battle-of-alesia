@@ -15,35 +15,19 @@
 		"build-scripts-debug": "browserify source/main.ts --debug -p [ tsify ] > dist/main.bundle.js",
 		"build-styles": "node-sass --source-map true source/style.scss dist/style.css",
 		"watch-styles": "npm run build-styles -s -- --watch",
-		"test": "jest --coverage --verbose",
-		"start": "http-server -p 8080"
-	},
-	"jest": {
-		"transform": {
-			"^.+\\.tsx?$": "ts-jest"
-		},
-		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-		"moduleFileExtensions": [
-			"ts",
-			"tsx",
-			"js",
-			"jsx",
-			"json"
-		]
+		"test": "exit 0",
+		"start": "http-server"
 	},
 	"devDependencies": {
-		"@types/jest": "21.1.8",
 		"browserify": "14.5.0",
 		"envify": "4.1.0",
 		"http-server": "0.10.0",
-		"jest": "21.2.1",
 		"mkdirp": "0.5.1",
 		"node-sass": "4.7.2",
 		"npm-run-all": "4.1.2",
 		"rimraf": "2.6.2",
-		"ts-jest": "21.2.4",
 		"typescript": "2.6.2",
-		"uglify-es": "3.2.2",
+		"uglify-es": "^3.3.4",
 		"uglifyify": "4.0.5"
 	},
 	"dependencies": {
