@@ -2,7 +2,7 @@
 T H E • B A T T L E • O F • A L E S I A
 =======================================
 
-## [↠ view the website ↞](https://open-history.github.io/battle-of-alesia/)
+## [↠ battle-of-alesia.com ↞](https://battle-of-alesia.com)
 ## work-in-progress
 
 a storytelling creation by **chase moskal** and **lonnie ralfs**
