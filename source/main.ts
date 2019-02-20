@@ -1,6 +1,6 @@
 
 import Chillax from "chillax"
-import WebpHero from "webp-hero"
+import {WebpMachine} from "webp-hero"
 import PromisePolyfill from "promise-polyfill"
 
 for (const init of [
@@ -10,8 +10,11 @@ for (const init of [
 	},
 
 	function initWebpPolyfill() {
-		const webpHero = window["webpHero"] = new WebpHero()
-		webpHero.polyfill()
+		const webpSupport = location.search.includes("force")
+			? Promise.resolve(false)
+			: undefined
+		const webpMachine = new WebpMachine({webpSupport})
+		webpMachine.polyfillDocument()
 	},
 
 	function initSpecialEffects() {

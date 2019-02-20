@@ -1,6 +1,6 @@
 {
 	"name": "battle-of-alesia.com",
-	"version": "0.0.0-dev.1",
+	"version": "0.0.0-dev.2",
 	"description": "julius caesar's story of the siege of vercingetorix's men and the people of the gallic hill fort alesia",
 	"private": true,
 	"main": "dist/main.bundle.js",
@@ -13,30 +13,30 @@
 		"build-debug": "npm run clean -s && run-p build-scripts-debug build-styles && echo ✔ done debug build",
 		"build-scripts": "browserify source/main.ts -p [ tsify ] -g [ envify --NODE_ENV production ] -g uglifyify > dist/main.bundle.uncompressed.js && uglifyjs -cm < dist/main.bundle.uncompressed.js > dist/main.bundle.js",
 		"build-scripts-debug": "browserify source/main.ts --debug -p [ tsify ] > dist/main.bundle.js",
-		"build-styles": "node-sass --source-map true source/style.scss dist/style.css",
+		"build-styles": "sassbass --indir source --outdir dist --sourcemap true",
 		"watch-styles": "npm run build-styles -s -- --watch",
 		"test": "exit 0",
 		"start": "http-server"
 	},
 	"devDependencies": {
-		"browserify": "14.5.0",
+		"browserify": "16.2.3",
 		"envify": "4.1.0",
-		"http-server": "0.10.0",
+		"http-server": "0.11.1",
 		"mkdirp": "0.5.1",
-		"node-sass": "4.7.2",
-		"npm-run-all": "4.1.2",
-		"rimraf": "2.6.2",
-		"typescript": "2.6.2",
-		"uglify-es": "^3.3.4",
-		"uglifyify": "4.0.5"
+		"npm-run-all": "4.1.5",
+		"rimraf": "2.6.3",
+		"sassbass": "0.0.0-dev.4",
+		"typescript": "3.3.3",
+		"uglify-es": "3.3.9",
+		"uglifyify": "5.0.1"
 	},
 	"dependencies": {
-		"chillax": "0.0.0-dev.6",
-		"mobx": "3.4.1",
-		"mobx-preact": "1.1.0",
-		"preact": "8.2.7",
-		"promise-polyfill": "^7.0.0",
-		"tsify": "3.0.4",
-		"webp-hero": "0.0.0-dev.11"
+		"chillax": "0.0.0-dev.7",
+		"mobx": "5.9.0",
+		"mobx-preact": "3.0.0",
+		"preact": "8.4.2",
+		"promise-polyfill": "8.1.0",
+		"tsify": "4.0.1",
+		"webp-hero": "0.0.0-dev.14"
 	}
 }
